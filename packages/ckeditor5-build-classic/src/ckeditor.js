@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 
 
 export default class ClassicEditor extends ClassicEditorBase {}
@@ -38,7 +39,6 @@ export default class ClassicEditor extends ClassicEditorBase {}
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
 	Essentials,
-	UploadAdapter,
 	Autoformat,
 	Bold,
 	Italic,
@@ -55,13 +55,13 @@ ClassicEditor.builtinPlugins = [
 	Indent,
 	Link,
 	List,
-	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	Table,
 	TableToolbar,
 	TextTransformation,
-	Base64UploadAdapter
+	Base64UploadAdapter,
+	ImageResize
 ];
 
 // Editor configuration.
